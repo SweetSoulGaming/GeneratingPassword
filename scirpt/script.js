@@ -92,12 +92,12 @@ var specialCharacters = [
   function getPasswordOptions() {
     // Stores the length of password input
     var length = parseInt(
-    prompt('Number of characters your password will contain?')
+     prompt('Number of characters your password will contain?')
     );
   // Statement to check if password length is number. Will end if prompt determines to be false
-   if (isNaN(length)=== true){
-   alert('Password length must be a number');
-   return;
+  if (isNaN(length)=== true){
+    alert('Password length must be a number');
+    return;
   }
   
   //Statement to check if password has atleast 8 charachters. The prompt will end if false
@@ -108,26 +108,26 @@ var specialCharacters = [
   
   // Statement to check if password is longer than 65 character. Denied if longer
   if (length > 64){
-   alert('Password must be less than 65 characters')
-   return;
+    alert('Password must be less than 65 characters')
+    return;
   }
   
   // Store boolean regardinf the inclusion of special character
   
   var hasSpecialCharacters = confrim(
-    "Click Ok to confirm special characters."
+    'Click Ok to confirm special characters.'
   );
   //Stores the boolean of numeric characters
   var hasNumericCharacters = confrim(
-    "Click Ok to confirm numeric characters."
+    'Click Ok to confirm numeric characters.'
   );
   //Stores the boolean of lowercased characters
   var hasLowerCasedCharacters = confrim(
-    "Click Ok to confirm special characters."
+    'Click Ok to confirm special characters.'
   );
   // Stores the boolean of uppercase characters
   var hasUpperCasedCharacters = confrim(
-    "Click Ok to confirm special characters."
+    'Click Ok to confirm special characters.'
   );
   
   // This check to see if user is following rule
